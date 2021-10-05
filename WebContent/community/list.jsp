@@ -7,7 +7,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>동아리 커뮤니티</title>
-<link rel="stylesheet" href="../css/boardlist.css?v=3">
+<!-- url 경로가 freeboard 입니다. community가 아닙니다. -->
+<link rel="stylesheet" href="css/boardlist.css?v=3">	<!-- url기준 -->
 </head>
 <body>
 	<h3>동아리 커뮤니티</h3>
@@ -47,9 +48,9 @@
 			</c:forEach>
 		</ul>
 		<div style="margin: auto;">
-			Go!<a class="button" href="insertView.jsp">글쓰기</a> &nbsp;&nbsp; <a
+			Go!<a class="button" href="insert.do">글쓰기</a> &nbsp;&nbsp; <a
 				class="button" href="${pageContext.request.contextPath }">홈 :
-				${request.contextPath} </a>&nbsp; &nbsp; &nbsp; 작성글 총 개수 :
+				${pageContext.request.contextPath} </a>&nbsp; &nbsp; &nbsp; 작성글 총 개수 :
 			${pageDto.totalCount}
 		</div>
 		<!-- 글목록 페이지 처리 : pagination0.-->
