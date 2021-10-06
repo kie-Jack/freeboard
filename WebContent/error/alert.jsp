@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Alert</title>
+<title>freeboard</title>
 </head>
 <body>
 <script type="text/javascript">

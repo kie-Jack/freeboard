@@ -17,7 +17,7 @@ import com.jcpdev.dto.PageDto;
 public class ListAction implements Action {
 
 	@Override
-	public boolean execute(HttpServletRequest request, HttpServletResponse response)
+	public ActionForward execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
 		//비지니스 로직을 처리하는 jsp 파일
@@ -43,8 +43,10 @@ public class ListAction implements Action {
 		request.setAttribute("list",list);
 //		pageContext.forward("listView.jsp");
 		
-		boolean isRedirect = false;
-		return isRedirect;
+		ActionForward forward = new ActionForward();
+		forward.isRedirect = false;
+		forward.url = "list.jsp";
+		return forward;
 	}
 
 }
